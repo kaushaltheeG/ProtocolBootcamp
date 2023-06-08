@@ -11,6 +11,8 @@
 		60EE4FBC2A328558009C93CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE4FBB2A328558009C93CD /* ContentView.swift */; };
 		60EE4FBE2A32855A009C93CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60EE4FBD2A32855A009C93CD /* Assets.xcassets */; };
 		60EE4FC12A32855A009C93CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60EE4FC02A32855A009C93CD /* Preview Assets.xcassets */; };
+		60EE4FC82A328AF1009C93CD /* ColorThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE4FC72A328AF1009C93CD /* ColorThemeProtocol.swift */; };
+		60EE4FCA2A328DF3009C93CD /* ProtocolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE4FC92A328DF3009C93CD /* ProtocolView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		60EE4FBB2A328558009C93CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		60EE4FBD2A32855A009C93CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60EE4FC02A32855A009C93CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		60EE4FC72A328AF1009C93CD /* ColorThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorThemeProtocol.swift; sourceTree = "<group>"; };
+		60EE4FC92A328DF3009C93CD /* ProtocolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		60EE4FB82A328558009C93CD /* ProtocolBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				60EE4FCE2A32965B009C93CD /* Protocols */,
+				60EE4FCD2A329643009C93CD /* Views */,
 				60EE4FB92A328558009C93CD /* ProtocolBootcampApp.swift */,
 				60EE4FBB2A328558009C93CD /* ContentView.swift */,
 				60EE4FBD2A32855A009C93CD /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				60EE4FC02A32855A009C93CD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		60EE4FCD2A329643009C93CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60EE4FC92A328DF3009C93CD /* ProtocolView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		60EE4FCE2A32965B009C93CD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				60EE4FC72A328AF1009C93CD /* ColorThemeProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60EE4FC82A328AF1009C93CD /* ColorThemeProtocol.swift in Sources */,
 				60EE4FBC2A328558009C93CD /* ContentView.swift in Sources */,
+				60EE4FCA2A328DF3009C93CD /* ProtocolView.swift in Sources */,
 				60EE4FBA2A328558009C93CD /* ProtocolBootcampApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

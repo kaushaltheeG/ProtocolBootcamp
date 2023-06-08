@@ -7,27 +7,37 @@
 
 import SwiftUI
 
-// set up definitive color theme for the entire app
-struct DefaultColorTheme {
-    let primary: Color = .gray
-    let secondary: Color = .black
-    let tertiary: Color = .purple
+struct RandomTheme {
+//    @State var selectedTheme: ColorThemeProtocol
+    
+    let themesDictionary: [Int: ColorThemeProtocol] = [
+        1: DefaultColorTheme(),
+        2: AlternativeColorTheme(),
+        3: AnotherColorTheme()
+    ]
+    
+    func selectRandomTheme() -> ColorThemeProtocol {
+        let themeCount = themesDictionary.count
+        let randomInt = Int.random(in: 1...themeCount)
+        return themesDictionary[randomInt]!
+    }
 }
 
 struct ContentView: View {
-    
-    let colorTheme: DefaultColorTheme = DefaultColorTheme()
+    @State private var clicked: Bool = false
+    @State private var selectedTheme: ColorThemeProtocol = RandomTheme().selectRandomTheme()
     
     var body: some View {
         ZStack {
-            colorTheme.tertiary
-                .ignoresSafeArea()
-            Text("Protocols are awesome")
-                .font(.headline)
-                .foregroundColor(colorTheme.secondary)
-                .padding()
-                .background(colorTheme.primary)
-                .cornerRadius(10)
+            VStack {
+                ProtocolView(colorTheme: selectedTheme)
+                Button ("Change Theme", action: {
+                    selectedTheme = RandomTheme().selectRandomTheme()
+                })
+                .frame(alignment: .bottom)
+            }
+
+            
         }
     }
 }
