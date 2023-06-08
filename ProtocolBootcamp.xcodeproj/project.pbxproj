@@ -13,6 +13,7 @@
 		60EE4FC12A32855A009C93CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60EE4FC02A32855A009C93CD /* Preview Assets.xcassets */; };
 		60EE4FC82A328AF1009C93CD /* ColorThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE4FC72A328AF1009C93CD /* ColorThemeProtocol.swift */; };
 		60EE4FCA2A328DF3009C93CD /* ProtocolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE4FC92A328DF3009C93CD /* ProtocolView.swift */; };
+		60EE4FD32A329D78009C93CD /* ButtonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EE4FD22A329D78009C93CD /* ButtonProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		60EE4FC02A32855A009C93CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		60EE4FC72A328AF1009C93CD /* ColorThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorThemeProtocol.swift; sourceTree = "<group>"; };
 		60EE4FC92A328DF3009C93CD /* ProtocolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolView.swift; sourceTree = "<group>"; };
+		60EE4FD22A329D78009C93CD /* ButtonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				60EE4FC72A328AF1009C93CD /* ColorThemeProtocol.swift */,
+				60EE4FD22A329D78009C93CD /* ButtonProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60EE4FD32A329D78009C93CD /* ButtonProtocol.swift in Sources */,
 				60EE4FC82A328AF1009C93CD /* ColorThemeProtocol.swift in Sources */,
 				60EE4FBC2A328558009C93CD /* ContentView.swift in Sources */,
 				60EE4FCA2A328DF3009C93CD /* ProtocolView.swift in Sources */,
